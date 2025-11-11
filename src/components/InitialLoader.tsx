@@ -22,9 +22,10 @@ const InitialLoader: React.FC<InitialLoaderProps> = ({ progress }) => {
 
   // Dynamic loading messages based on progress
   const getLoadingMessage = () => {
-    if (progress < 20) return 'Initializing data visualization platform...';
-    if (progress < 40) return 'Loading charts, graphs and visualization tools...';
-    if (progress < 60) return 'Preparing your interactive dashboard environment...';
+    if (progress < 15) return 'Initializing data visualization platform...';
+    if (progress < 30) return 'Preloading hero video content...';
+    if (progress < 50) return 'Loading interactive video demonstrations...';
+    if (progress < 65) return 'Preparing charts and visualization tools...';
     if (progress < 80) return 'Setting up your data analysis workspace...';
     if (progress < 95) return 'Almost ready to start your data visualization journey...';
     return 'Welcome to your data visualization education platform!';
