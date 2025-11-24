@@ -71,7 +71,7 @@ export const getProductVideo = (productId: number): string | undefined => {
 
 // Helper function to get course videos (for premium courses with multiple videos)
 export const getProductVideos = (productId: number): string[] | undefined => {
-  // Courses 1-4: 1 video each (basic courses get 5-minute versions for account access)
+  // Courses 1-5: 1 video each
   if (productId === 1) {
     return ["/videos/vid5min/1 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"];
   }
@@ -84,69 +84,103 @@ export const getProductVideos = (productId: number): string[] | undefined => {
   if (productId === 4) {
     return ["/videos/vid5min/4 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4"];
   }
-  
-  // Courses 5-7: 3 videos each
   if (productId === 5) {
+    return ["/videos/vid5min/5 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"];
+  }
+  
+  // Courses 6-8: 2 videos each
+  if (productId === 6) {
     return [
-      "/videos/vid5min/5 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/6 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/7 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
     ];
   }
-  if (productId === 6) {
+  if (productId === 7) {
     return [
+      "/videos/vid5min/8 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/9 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4"
+    ];
+  }
+  if (productId === 8) {
+    return [
+      "/videos/vid5min/10 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/11 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
+    ];
+  }
+  
+  // Courses 9-11: 3 videos each
+  if (productId === 9) {
+    return [
+      "/videos/vid5min/12 Excel Data Visualization Advanced Demos Chris Dutton Skil (1)_5min.mp4",
+      "/videos/vid5min/13 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/14 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
+    ];
+  }
+  if (productId === 10) {
+    return [
+      "/videos/vid5min/1 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/2 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/3 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
+    ];
+  }
+  if (productId === 11) {
+    return [
+      "/videos/vid5min/4 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/5 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/6 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
+    ];
+  }
+  
+  // Courses 12-16: 4 videos each
+  if (productId === 12) {
+    return [
+      "/videos/vid5min/7 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/8 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/9 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/10 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
     ];
   }
-  if (productId === 7) {
+  if (productId === 13) {
     return [
-      "/videos/vid5min/11 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/12 Excel Data Visualization Advanced Demos Chris Dutton Skil (1)_5min.mp4",
-      "/videos/vid5min/13 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
-    ];
-  }
-  
-  // Courses 8-10: 5 videos each
-  if (productId === 8) {
-    return [
-      "/videos/vid5min/1 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/2 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/3 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/4 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/14 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
-    ];
-  }
-  if (productId === 9) {
-    return [
-      "/videos/vid5min/5 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/6 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/7 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/8 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/9 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4"
-    ];
-  }
-  if (productId === 10) {
-    return [
-      "/videos/vid5min/10 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/11 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/12 Excel Data Visualization Advanced Demos Chris Dutton Skil (1)_5min.mp4",
       "/videos/vid5min/13 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/14 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
     ];
   }
-  
-  // Course 11: 7 videos (premium)
-  if (productId === 11) {
+  if (productId === 14) {
     return [
       "/videos/vid5min/1 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/2 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/3 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/4 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/4 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4"
+    ];
+  }
+  if (productId === 15) {
+    return [
       "/videos/vid5min/5 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
       "/videos/vid5min/6 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
-      "/videos/vid5min/7 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
+      "/videos/vid5min/7 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/8 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
+    ];
+  }
+  if (productId === 16) {
+    return [
+      "/videos/vid5min/9 Excel Data Visualization  Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/10 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/11 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/12 Excel Data Visualization Advanced Demos Chris Dutton Skil (1)_5min.mp4"
+    ];
+  }
+  
+  // Course 17: 5 videos
+  if (productId === 17) {
+    return [
+      "/videos/vid5min/13 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/14 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/1 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/2 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4",
+      "/videos/vid5min/3 Excel Data Visualization Advanced Demos Chris Dutton Skil_5min.mp4"
     ];
   }
   
@@ -157,7 +191,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Setting Expectations & Course Overview",
-    price: 6.99,
+    price: 1.00,
     image: getProductImage(1),
     images: getProductImages(1),
     video: getProductVideo(1),
@@ -185,7 +219,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Custom Image Overlay Charts",
-    price: 9.99,
+    price: 1.95,
     image: getProductImage(2),
     images: getProductImages(2),
     video: getProductVideo(2),
@@ -213,7 +247,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "Binary Values & Date Range Highlighting",
-    price: 19.99,
+    price: 6.99,
     image: getProductImage(3),
     images: getProductImages(3),
     video: getProductVideo(3),
@@ -241,7 +275,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: "Dynamic Charts with OFFSET & Named Ranges",
-    price: 29.99,
+    price: 9.99,
     image: getProductImage(4),
     images: getProductImages(4),
     video: getProductVideo(4),
@@ -269,7 +303,7 @@ export const products: Product[] = [
   {
     id: 5,
     name: "Interactive Scroll & Zoom Charts with Form Controls",
-    price: 39.99,
+    price: 19.99,
     image: getProductImage(5),
     images: getProductImages(5),
     video: getProductVideo(5),
@@ -299,7 +333,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: "Animated Charts & Time-Based Visualizations",
-    price: 49.99,
+    price: 29.99,
     image: getProductImage(6),
     images: getProductImages(6),
     video: getProductVideo(6),
@@ -329,7 +363,7 @@ export const products: Product[] = [
   {
     id: 7,
     name: "Dynamic Dashboards & Interactive Interfaces",
-    price: 59.99,
+    price: 39.99,
     image: getProductImage(7),
     images: getProductImages(7),
     video: getProductVideo(7),
@@ -359,7 +393,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Advanced Chart Formatting & Value-Based Styling",
-    price: 69.99,
+    price: 49.99,
     image: getProductImage(8),
     images: getProductImages(8),
     video: getProductVideo(8),
@@ -389,7 +423,7 @@ export const products: Product[] = [
   {
     id: 9,
     name: "Specialized Chart Types: Gauge Charts & Pacing Visualizations",
-    price: 79.99,
+    price: 59.99,
     image: getProductImage(9),
     images: getProductImages(9),
     video: getProductVideo(9),
@@ -419,7 +453,7 @@ export const products: Product[] = [
   {
     id: 10,
     name: "Array Functions & Advanced Mathematical Visualization",
-    price: 89.99,
+    price: 69.99,
     image: getProductImage(10),
     images: getProductImages(10),
     video: getProductVideo(10),
@@ -449,16 +483,16 @@ export const products: Product[] = [
   {
     id: 11,
     name: "Complete Excel Data Visualization Mastery + Advanced Techniques",
-    price: 99.99,
+    price: 79.99,
     image: getProductImage(11),
     images: getProductImages(11),
     video: getProductVideo(11),
     videos: getProductVideos(11),
     description: "Master all advanced Excel visualization techniques including custom overlays, dynamic dashboards, animation, interactive controls, and specialized chart mastery.",
-    detailedDescription: "Achieve complete Excel visualization mastery with comprehensive training covering all advanced techniques. This premium course includes 8 comprehensive video modules covering custom image overlays, binary date highlighting, OFFSET automation, interactive form controls, animated visualizations, dynamic dashboards, advanced formatting, gauge charts, pacing analysis, and array function applications used by data visualization experts worldwide.",
+    detailedDescription: "Achieve complete Excel visualization mastery with comprehensive training covering all advanced techniques. This premium course includes 3 comprehensive video modules covering custom image overlays, binary date highlighting, OFFSET automation, interactive form controls, animated visualizations, dynamic dashboards, advanced formatting, gauge charts, pacing analysis, and array function applications used by data visualization experts worldwide.",
     category: "Complete Mastery",
     features: [
-      "8 comprehensive video modules",
+      "3 comprehensive video modules",
       "Complete advanced visualization mastery",
       "All custom chart techniques covered",
       "Interactive dashboard development",
@@ -468,13 +502,176 @@ export const products: Product[] = [
       "Professional Excel expertise"
     ],
     specifications: {
-      "Duration": "9 minutes 51 seconds",
-      "Videos": "8 comprehensive modules",
+      "Duration": "15 minutes",
+      "Videos": "3 comprehensive modules",
       "Level": "Expert",
       "Coverage": "All advanced Excel visualization techniques",
       "Skills": "Complete chart mastery & advanced Excel expertise",
       "Access": "18 months",
       "Bonus": "Complete advanced visualization toolkit & templates"
+    },
+    inStock: true
+  },
+  {
+    id: 12,
+    name: "Power BI Integration & Excel Data Connectivity",
+    price: 89.99,
+    image: getProductImage(12),
+    images: getProductImages(12),
+    video: getProductVideo(11),
+    videos: getProductVideos(12),
+    description: "Master seamless Power BI integration with Excel for advanced business intelligence and automated reporting systems.",
+    detailedDescription: "Learn professional Power BI integration techniques for Excel data visualization. Master data connectivity, automated refresh systems, and advanced business intelligence workflows that connect Excel charts with Power BI dashboards for enterprise-level reporting solutions.",
+    category: "Power BI Integration",
+    features: [
+      "Power BI connectivity mastery",
+      "Automated data refresh systems",
+      "Excel-Power BI synchronization",
+      "Enterprise reporting workflows"
+    ],
+    specifications: {
+      "Duration": "20 minutes",
+      "Videos": "4 comprehensive modules",
+      "Level": "Expert",
+      "Focus": "Power BI, data connectivity, automation",
+      "Access": "18 months",
+      "Bonus": "Power BI templates & integration guides"
+    },
+    inStock: true
+  },
+  {
+    id: 13,
+    name: "VBA Automation for Dynamic Chart Systems",
+    price: 99.99,
+    image: getProductImage(13),
+    images: getProductImages(13),
+    video: getProductVideo(11),
+    videos: getProductVideos(13),
+    description: "Master VBA programming for automated chart generation, dynamic updates, and advanced Excel visualization automation.",
+    detailedDescription: "Deep dive into VBA automation for data visualization. Learn to create self-updating chart systems, automated report generation, custom chart macros, and advanced programming techniques for professional Excel automation used by Fortune 500 companies.",
+    category: "VBA Automation",
+    features: [
+      "VBA programming fundamentals",
+      "Automated chart generation",
+      "Dynamic update systems",
+      "Custom macro development"
+    ],
+    specifications: {
+      "Duration": "20 minutes",
+      "Videos": "4 detailed modules",
+      "Level": "Expert",
+      "Focus": "VBA, automation, programming",
+      "Access": "20 months",
+      "Bonus": "VBA code library & macro templates"
+    },
+    inStock: true
+  },
+  {
+    id: 14,
+    name: "Financial Dashboard Design & KPI Visualization",
+    price: 109.99,
+    image: getProductImage(14),
+    images: getProductImages(14),
+    video: getProductVideo(11),
+    videos: getProductVideos(14),
+    description: "Master professional financial dashboard creation with advanced KPI tracking, variance analysis, and executive reporting systems.",
+    detailedDescription: "Learn enterprise-level financial dashboard design with comprehensive training on KPI visualization, variance analysis charts, financial modeling integration, and executive presentation techniques used by CFOs and financial analysts worldwide.",
+    category: "Financial Dashboards",
+    features: [
+      "Financial KPI mastery",
+      "Variance analysis techniques",
+      "Executive dashboard design",
+      "Financial modeling integration"
+    ],
+    specifications: {
+      "Duration": "20 minutes",
+      "Videos": "4 comprehensive modules",
+      "Level": "Expert",
+      "Focus": "Finance, KPIs, executive reporting",
+      "Access": "20 months",
+      "Bonus": "Financial dashboard templates"
+    },
+    inStock: true
+  },
+  {
+    id: 15,
+    name: "Sales Analytics & Performance Visualization Mastery",
+    price: 119.99,
+    image: getProductImage(15),
+    images: getProductImages(15),
+    video: getProductVideo(11),
+    videos: getProductVideos(15),
+    description: "Master advanced sales analytics with territory mapping, pipeline visualization, conversion funnels, and revenue forecasting dashboards.",
+    detailedDescription: "Achieve sales analytics mastery with comprehensive training on territory performance maps, sales pipeline visualization, conversion funnel analysis, revenue forecasting systems, and advanced sales KPI dashboards used by top-performing sales organizations globally.",
+    category: "Sales Analytics",
+    features: [
+      "Territory mapping techniques",
+      "Pipeline visualization mastery",
+      "Conversion funnel analysis",
+      "Revenue forecasting systems"
+    ],
+    specifications: {
+      "Duration": "20 minutes",
+      "Videos": "4 comprehensive modules",
+      "Level": "Expert",
+      "Focus": "Sales analytics, forecasting, performance",
+      "Access": "24 months",
+      "Bonus": "Sales analytics toolkit & templates"
+    },
+    inStock: true
+  },
+  {
+    id: 16,
+    name: "Real-Time Data Visualization & Live Dashboard Systems",
+    price: 129.99,
+    image: getProductImage(16),
+    images: getProductImages(16),
+    video: getProductVideo(11),
+    videos: getProductVideos(16),
+    description: "Master real-time data integration with live updating dashboards, API connectivity, and automated data stream visualization.",
+    detailedDescription: "Learn cutting-edge real-time visualization techniques with comprehensive training on live data feeds, API integration, automated refresh systems, streaming data visualization, and professional real-time dashboard frameworks used by data operations teams.",
+    category: "Real-Time Systems",
+    features: [
+      "Real-time data integration",
+      "Live dashboard updates",
+      "API connectivity mastery",
+      "Streaming data visualization"
+    ],
+    specifications: {
+      "Duration": "20 minutes",
+      "Videos": "4 detailed modules",
+      "Level": "Expert",
+      "Focus": "Real-time data, APIs, automation",
+      "Access": "24 months",
+      "Bonus": "Real-time dashboard framework"
+    },
+    inStock: true
+  },
+  {
+    id: 17,
+    name: "Ultimate Excel Visualization Certification Bundle - All Courses",
+    price: 139.99,
+    image: getProductImage(17),
+    images: getProductImages(17),
+    video: getProductVideo(11),
+    videos: getProductVideos(17),
+    description: "Complete Excel visualization certification with all 16 premium courses, lifetime access, priority support, and professional certification.",
+    detailedDescription: "The ultimate Excel visualization mastery bundle including all 16 premium courses covering every aspect from basic charts to real-time dashboards, VBA automation, Power BI integration, financial analytics, sales visualization, and advanced programming. Includes lifetime access, priority support, professional certification, complete template library, and exclusive masterclass sessions.",
+    category: "Complete Bundle",
+    features: [
+      "All 16 premium courses included",
+      "Lifetime platform access",
+      "Professional certification",
+      "Priority email support",
+      "Complete template library"
+    ],
+    specifications: {
+      "Duration": "100+ minutes total",
+      "Videos": "5 comprehensive modules",
+      "Level": "Complete Beginner to Expert",
+      "Coverage": "Every Excel visualization technique",
+      "Access": "Lifetime with all updates",
+      "Bonus": "Professional certification + complete toolkit"
     },
     inStock: true
   }
